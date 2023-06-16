@@ -9,27 +9,3 @@ var readEnv = function(name) {
   }
   return value;
 };
-
-var getMumbaiPrivateKey = function() {
-  return readEnv("MUMBAI_PRIVATE_KEY");
-};
-
-var getGoerliPrivateKey = function() {
-  return readEnv("GOERLI_PRIVATE_KEY");
-};
-
-var getGoerliProviderUrl = function() {
-  return readEnv("GOERLI_PROVIDER_URL");
-};
-
-var getMumbaiProviderUrl = function() {
-  return readEnv("MUMBAI_PROVIDER_URL");
-};
-
-module.exports = {
-  readEnv: readEnv,
-  getMumbaiPrivateKey: getMumbaiPrivateKey,
-  getGoerliPrivateKey: getGoerliPrivateKey,
-  getGoerliProviderUrl: getGoerliProviderUrl,
-  getMumbaiProviderUrl: getMumbaiProviderUrl
-};
