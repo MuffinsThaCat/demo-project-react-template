@@ -12,7 +12,7 @@ const bip32 = BIP32Factory(ecc);
 
 // sign message with first sign transaction
 export const TAPROOT_MESSAGE = (domain) =>
-    // will switch to nosft.xyz once sends are implemented
+
     `Sign this message to generate your Bitcoin Taproot key. This key will be used for your ${domain} transactions.`;
 
 // Used to prove ownership of address and associated ordinals
